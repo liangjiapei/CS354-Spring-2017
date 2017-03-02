@@ -1,0 +1,13 @@
+/* net2hostlgcc.c - net2hostlgcc */
+
+#include <byteswap.h>
+
+/*------------------------------------------------------------------------
+ * net2hostlgcc  -  Convert big endian to little endian
+ *------------------------------------------------------------------------
+ */
+
+long net2hostlgcc(long x)
+{
+	return (long) bswap_32(x);
+}
